@@ -1,0 +1,46 @@
+Listagem de caminhos de pasta
+O n·mero de sÚrie do volume Ú 10F5-6C91
+\---data-app
+    |   .env
+    |   comandos.txt
+    |   Docker-compose.yml
+    |   Dockerfile
+    |   poetry.lock
+    |   pyproject.toml
+    |   README.md
+    |   structure.txt
+    |   .venv
+    
+    +---data_app
+
+    |       |   config.py
+    |       |   main.py
+    |       |   __init__.py
+    |       |   
+    |       +---consumers
+    |       |       consumer.py
+    |       |       
+    |       +---messaging
+    |       |       rabbitmq.py
+    |       |       
+    |       +---models
+    |       |       raw_data.py
+    |       |       transformed_data.py
+    |       |       
+    |       +---publishers
+    |       |       publisher.py
+    |       |       
+    |       +---services
+    |       |       raw_data_service.py
+    |       |       transformation_service.py
+    |       |       
+    |       +---tasks
+    |       |       scheduler.py
+    |       |       
+    |       \---utils
+    |               logger.py         
+    \---tests
+            test_consumers.py
+            test_publishers.py
+            test_services.py
+            
